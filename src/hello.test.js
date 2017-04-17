@@ -1,6 +1,6 @@
 import Greeting from './hello'
 
 test('Greeting.greet', () => {
-  const testGreet = new Greeting('Test')
-  expect(testGreet.greet()).toBe('Hello Test')
+  const testGreet = new Greeting('WebApp!')
+  expect(testGreet.greet()).toBe('Semantic Weapons WebApp!')
 })
