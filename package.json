@@ -2,8 +2,34 @@
   "name": "webapp_boilerplate",
   "version": "1.0.0",
   "description": "WebApp Boilerplate",
-  "main": "app.js",
   "repository": "git@github.com:semanticmx/webapp_boilerplate.git",
   "author": "Semantic Weapons",
-  "license": "GPL2"
+  "license": "GPL2",
+  "main": "app.js",
+  "scripts": {
+    "start": "babel-node src/app.js",
+    "test": "eslint src && flow && jest --coverage",
+    "precommit": "yarn test",
+    "prepush": "yarn test"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.2",
+    "babel-jest": "^19.0.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-compat": "^1.0.2",
+    "eslint-plugin-flowtype": "^2.30.4",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2 || ^4.0.0",
+    "eslint-plugin-react": "^6.9.0",
+    "flow-bin": "^0.44.0",
+    "husky": "^0.13.3",
+    "jest": "^19.0.2"
+  },
+  "browserslist": [
+    "> 1%"
+  ]
 }
