@@ -1,0 +1,9 @@
+{
+  "name": "webapp_boilerplate",
+  "version": "1.0.0",
+  "description": "WebApp Boilerplate",
+  "main": "app.js",
+  "repository": "git@github.com:semanticmx/webapp_boilerplate.git",
+  "author": "Semantic Weapons",
+  "license": "GPL2"
+}
