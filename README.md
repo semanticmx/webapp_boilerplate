@@ -11,14 +11,22 @@ You will see something like:
 yarn start v0.23.2
 $ yarn dev:start 
 yarn dev:start v0.23.2
-$ nodemon --ignore lib --exec babel-node src/server 
+$ nodemon -e js,jsx --ignore lib --ignore dist --exec babel-node src/server 
 [nodemon] 1.11.0
 [nodemon] to restart at any time, enter `rs`
 [nodemon] watching: *.*
 [nodemon] starting `babel-node src/server`
 Server running on port 3030 (development).
+Keep "yarn dev:wds" running in an other terminal.
 ```
-point your web browser to [localhost:3030](http://localhost:3030) to see the website.
+now, you need to create the bundle.js file including all your project JS files.
+You need to do this on a second terminal.
+```bash
+$ yarn dev:wds
+```
+Just leave that terminal running as it will also handle hot reloading.
+
+Point your web browser to [localhost:3030](http://localhost:3030) to see the development website.
 ### Deploy to Production
 On production run build, start and stop commands.
 ```
